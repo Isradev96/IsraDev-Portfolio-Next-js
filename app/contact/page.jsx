@@ -15,7 +15,7 @@ import { HiOutlineMapPin, HiOutlineArrowLongRight } from "react-icons/hi2";
 import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const notifySuccess = () => toast.success("Message sent successfuly!");
@@ -30,6 +30,7 @@ const Contact = () => {
     // 👇 Validación manual
           if (!subject) {
             toast.warning("Please select a service before submitting."); // o tu notificación personalizada
+            console.log("Selecciona un servicio");
             return;
           } 
 
@@ -145,7 +146,7 @@ const Contact = () => {
                   <Select
                     name="subject"
                     value={subject}
-                    onValueChange={setSubject}
+                    onValueChange={(value) => setSubject(value)}
                   >
                     <SelectTrigger
                       id="service"
@@ -180,7 +181,6 @@ const Contact = () => {
                     <HiOutlineArrowLongRight className="text-xl" />
                   </div>
                 </button>
-                <ToastContainer />
               </form>
             </div>
           </div>

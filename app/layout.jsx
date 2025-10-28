@@ -6,6 +6,8 @@ import PageTransition from "@/components/PageTransition";
 import RectangleTransition from "@/components/RectangleTransition";
 import Gradient from "@/components/Gradient";
 import Header from "@/components/Header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const sometypeMono = Sometype_Mono({
   variable: "--font-sometypeMono",
@@ -20,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${sometypeMono.variable} antialiased overflow-hidden relative`}>
+      <body className={`${sometypeMono.variable} antialiased relative`}>
         <Gradient />
         <RectangleTransition />
         <PageTransition>
@@ -34,7 +36,8 @@ export default function RootLayout({ children }) {
             <div>{children}</div>
           </div>
           </div>  
-        </PageTransition>     
+        </PageTransition>
+        <ToastContainer style={{ zIndex: 9999 }} />     
       </body>
     </html>
   );
