@@ -42,10 +42,10 @@ const Header = () => {
               <NavLinks containerStyles="flex flex-col gap-8 max-w-[100px]" />
               <div>
                 <Link href="./cv/CV_Israel_Cortes_English.pdf" target="blank">
-                  <button className="btn btn-lg btn-tertiary mb-16">
+                  <button aria-label="Download CV" className="btn btn-lg btn-tertiary mb-16">
                     <div className="flex items-center gap-3">
                       <span>Download CV</span>
-                      <MdFileDownload className="text-xl" />
+                      <MdFileDownload aria-hidden="true" className="text-xl" />
                     </div>
                   </button>
                 </Link>

@@ -180,10 +180,10 @@ const Contact = () => {
                   />
                 </div>
                 {/* btn */}
-                <button type="submit" className="btn btn-lg btn-accent">
+                <button aria-label="Send Message" type="submit" className="btn btn-lg btn-accent">
                   <div className="flex items-center gap-3">
                     <span className="font-medium">Send Message</span>
-                    <HiOutlineArrowLongRight className="text-xl" />
+                    <HiOutlineArrowLongRight aria-hidden="true" className="text-xl" />
                   </div>
                 </button>
               </form>

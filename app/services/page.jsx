@@ -56,7 +56,7 @@ const Services = () => {
           <h2 className="h2 max-w-[480px] text-left xl:mb-0">Custom <span className="text-accent">Web Solutions</span> to Boost Your Business
           </h2>
           {/* btn */}
-          <button className="btn btn-lg btn-accent flex gap-2">All Services <MdArrowRightAlt className="text-2xl"/></button>
+          <button aria-label="All Services" className="btn btn-lg btn-accent flex gap-2">All Services <MdArrowRightAlt aria-hidden="true" className="text-2xl"/></button>
         </div>
         {/* slider */}
         <Swiper

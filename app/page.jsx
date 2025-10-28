@@ -44,10 +44,10 @@ const Home = () => {
             experiences.
           </p>
           <Link href="/contact">
-            <button className="btn btn-lg btn-accent mb-16">
+            <button aria-label="Let's talk" className="btn btn-lg btn-accent mb-16">
             <div className="flex items-center gap-3">
               <span>Let's talk.</span>
-              <MdArrowOutward className="text-xl" />
+              <MdArrowOutward aria-hidden="true" className="text-xl" />
             </div>
           </button>
           </Link>

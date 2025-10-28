@@ -238,14 +238,14 @@ const Work = () => {
                                 {/* btns */}
                                 <div className="flex flex-col sm:flex-row gap-4 items-start mb-8">
                                   <Link href={project.link} target="blank">
-                                    <button className="btn btn-sm btn-accent flex gap-2">
-                                      <MdArrowOutward className="text-xl"/>
+                                    <button aria-label="Live Projects" className="btn btn-sm btn-accent flex gap-2">
+                                      <MdArrowOutward aria-hidden="true" className="text-xl"/>
                                       <span>Live Projects</span>
                                     </button>
                                   </Link>
                                   <Link href={project.github} target="blank">
-                                    <button className="btn btn-sm btn-white flex gap-2">
-                                      <FaGithub className="text-xl"/>
+                                    <button aria-label="Git Repo" className="btn btn-sm btn-white flex gap-2">
+                                      <FaGithub aria-hidden="true" className="text-xl"/>
                                       <span>Github Repo</span>
                                     </button>
                                   </Link>
