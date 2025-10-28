@@ -10,14 +10,17 @@ const socials = [
     {
         icon: <BiLogoFacebook />,
         path:"https://www.facebook.com/israel.pelayo.961/",
+        ariaLabel:"Enlace a Facebook",
     },
     {
         icon: <BiLogoGithub />,
         path:"https://github.com/Isradev96",
+        ariaLabel:"Enlace a Github",
     },
     {
         icon: <BiLogoLinkedin />,
         path:"https://www.linkedin.com/in/israel-de-jes%C3%BAs-cort%C3%A9s-pelayo-814118252/",
+        ariaLabel:"Enlace a Linkedin",
     },
     
 ]
@@ -26,7 +29,7 @@ const Socials = ({containerStyles, iconStyles}) => {
   return <div className={containerStyles}>
     {socials.map((item, index) => {
         return (
-            <Link key={index} className={iconStyles} href={item.path} target="blank">
+            <Link key={index} className={iconStyles} href={item.path} aria-label={item.ariaLabel} target="blank">
                 {item.icon}
             </Link>
         )

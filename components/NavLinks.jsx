@@ -7,23 +7,28 @@ import React, { use } from 'react'
 const links = [
   {
     name: 'Home',
-    path: '/'
+    path: '/',
+    ariaLabel:"Link to Home"
   },
   {
     name: 'about',
-    path: '/about'
+    path: '/about',
+    ariaLabel:"Link to About"
   },
   {
     name: 'services',
-    path: '/services'
+    path: '/services',
+    ariaLabel:"Link to Services"
   },
   {
     name: 'work',
-    path: '/work'
+    path: '/work',
+    ariaLabel:"Link to Work"
   },
   {
     name: 'contact',
-    path: '/contact'
+    path: '/contact',
+    ariaLabel:"Link to Contact"
   }
   
 ]
@@ -41,7 +46,7 @@ const NavLinks = ({containerStyles}) => {
         const lineWidth = charLength * 5 ? "after:w-[120%]" : "after:w-[90%]";
         console.log(charLength);
         return(
-          <Link href={link.path} key={index} className={`relative text-lg uppercase text-white ${isActive && `after:content-[''] after:block after:absolute after:left-0 after:top-1/2 ${lineWidth} after:h-[4px] after:bg-accent after:-translate-y-1/2 after:z-0`}`}>
+          <Link href={link.path} aria-label={link.ariaLabel} key={index} className={`relative text-lg uppercase text-white ${isActive && `after:content-[''] after:block after:absolute after:left-0 after:top-1/2 ${lineWidth} after:h-[4px] after:bg-accent after:-translate-y-1/2 after:z-0`}`}>
             <span className="relative z-10">{link.name}</span>
           </Link>
         )  
