@@ -1,17 +1,17 @@
 const journey = [
     {
-        years: "2022 - Present",
-        role: "Web Developer & Designer",
-        institution: "Tech Inc",
-    },
-    {
-        years: "2020 - 2022",
+        years: "July 2025 - Present",
         role: "Web Developer",
-        institution: "Patito Company",
+        institution: "PixelArt Web & Design",
     },
     {
-        years: "2019 - 2020",
-        role: "Web Designer",
+        years: "November 2021 - July 2025",
+        role: "Fullstack Developer",
+        institution: "Freelance",
+    },
+    {
+        years: "April 2017 - July 2017",
+        role: "Web Developer Intern",
         institution: "H. Ayuntamiento",
     },
 ]

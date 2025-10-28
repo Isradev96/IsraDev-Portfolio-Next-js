@@ -5,6 +5,8 @@ import {
   RiCss3Fill,
   RiTailwindCssFill,
   RiNodejsFill,
+  RiJavascriptFill,
+  RiGithubFill,
 } from "react-icons/ri";
 import {
   Tooltip,
@@ -31,12 +33,20 @@ const skills = [
         name: "CSS 3",
     },
     {
+        icon: <RiJavascriptFill />,
+        name: "JavaScript",
+    },
+    {
         icon: <RiTailwindCssFill />,
         name: "Tailwind CSS",
     },
     {
         icon: <RiNodejsFill />,
         name: "Node.js",
+    },
+    {
+        icon: <RiGithubFill />,
+        name: "Github",
     },
 ]
 

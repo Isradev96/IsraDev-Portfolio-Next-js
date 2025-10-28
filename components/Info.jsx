@@ -13,7 +13,7 @@ const Info = () => {
             <HiOutlineMail className="text-2xl mt-1 text-accent"/>
             <div>
                 <p className="text-lg">Email Address</p>
-                <p>isradev.cortespelayo</p>
+                <p>isradev.cortespelayo<br/>@gmail.com</p>
             </div>
         </div>
         <div className="w-[280px] flex items-start gap-4">
@@ -37,7 +37,7 @@ const Info = () => {
             <HiOutlineLocationMarker className="text-2xl mt-1 text-accent"/>
             <div>
                 <p className="text-lg">Location</p>
-                <p>Puerto Vallarta, México.</p>
+                <p>Guadalajara, Jalisco.</p>
             </div>
         </div>
 

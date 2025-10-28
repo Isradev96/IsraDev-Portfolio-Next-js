@@ -74,8 +74,9 @@ const Contact = () => {
                   Get In <span>Touch</span>
                 </h2>
                 <p className="max-w-[460px]">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Magni provident, doloremque.
+                  Whether you are looking to create a new website, improve your
+                  existing platform, or present a unique project, I am here to
+                  help.
                 </p>
               </div>
               {/* info */}
@@ -155,8 +156,12 @@ const Contact = () => {
                       <SelectValue placeholder="Choose here" />
                     </SelectTrigger>
                     <SelectContent className="bg-black border-white/20">
-                      <SelectItem value="Web Development">Web Development</SelectItem>
-                      <SelectItem value="UI & UX Design">UI & UX Design</SelectItem>
+                      <SelectItem value="Web Development">
+                        Web Development
+                      </SelectItem>
+                      <SelectItem value="UI & UX Design">
+                        UI & UX Design
+                      </SelectItem>
                       <SelectItem value="Logo Design">Logo Design</SelectItem>
                     </SelectContent>
                   </Select>

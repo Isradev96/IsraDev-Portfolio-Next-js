@@ -9,6 +9,7 @@ import Blob from "@/components/Blob";
 import avatarImg from "@/public/assets/avatar.webp";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -42,12 +43,14 @@ const Home = () => {
             that transform your ideas into seamless, engaging digital
             experiences.
           </p>
-          <button className="btn btn-lg btn-accent mb-16">
+          <Link href="/contact">
+            <button className="btn btn-lg btn-accent mb-16">
             <div className="flex items-center gap-3">
               <span>Let's talk.</span>
               <MdArrowOutward className="text-xl" />
             </div>
           </button>
+          </Link>
           {/* contact info */}
           <div className="flex flex-col items-start gap-4 xl:gap-8 mb-12 xl:mb-0">
             {/* phone */}

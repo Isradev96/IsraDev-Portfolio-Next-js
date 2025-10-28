@@ -13,18 +13,23 @@ import { ImQuotesLeft } from "react-icons/im";
 const testimonial = [
   {
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci temporibus exercitationem cupiditate commodi quas veniam doloribus.",
-    name: "Juan Perez",
+      "Me ayudaron a crear un sitio elegante y fácil de navegar. Desde el lanzamiento, he ganado visibilidad. Fue justo lo que necesitaba para profesionalizar mi presencia digital.",
+    name: "Natalia GGG",
   },
   {
     message:
-      "Excelente servicio lo recomiendo por muy buenos que fueron con mi página web.",
-    name: "Pedro López",
+      "El sitio no solo refleja bien lo que hacemos, también nos ayudó a aparecer en Google y recibir más mensajes por WhatsApp. Todo fue claro, rápido y con mucha atención al detalle. Recomendado al 100%.",
+    name: "TecnoPro",
   },
   {
     message:
-      "Los mejores sin duda, me ayudaron mucho con mi tienda en linea y mil gracias por todo.",
-    name: "Carmen Salinas",
+      "¡Me encantó el sitio web! Es moderno, rápido y permite que los clientes reserven en línea sin complicaciones. Incluso agregaron una galería de cortes y una sección con reseñas reales.",
+    name: "La Costa Barbershop",
+  },
+  {
+    message:
+      "La página es rápida, atractiva y se adapta perfecto al celular. Hemos notado más visitas y mejores comentarios. ¡Sin duda fue una gran inversión para crecer digitalmente!",
+    name: "Restaurante Soraya",
   },
 ];
 const Testimonial = () => {
@@ -38,8 +43,8 @@ const Testimonial = () => {
       {testimonial.map((person, index) => {
         return (
             <SwiperSlide key={index}>
-            <div className="flex px-8 py-6 gap-8">
-                <ImQuotesLeft className="hidden xl:flex text-8xl text-accent"/>
+            <div className="flex flex-col px-8 py-6 gap-6">
+                <ImQuotesLeft className="xl:flex text-2xl text-accent"/>
                 <div className="flex flex-col gap-2">
                     <p>{person.message}</p>
                     <p className="self-end text-accent font-semibold">{person.name}</p>
