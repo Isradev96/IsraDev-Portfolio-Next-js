@@ -26,6 +26,8 @@ const projects = [
     link: "https://homely-real-state.netlify.app/",
     github: "https://github.com/Isradev96/Real-state-webpage",
     tech: ["React", "Tailwind CSS", "Swiper js"],
+    ariaLabelProjects: "Enlace a proyecto Real State Landing Page",
+    ariaLabelGithub: "Enlace a github Real State Landing Page"
   },
   {
     id: 2,
@@ -36,6 +38,9 @@ const projects = [
     link: "https://dentaly-bussiness.netlify.app/",
     github: "https://github.com/Isradev96/Dental-webpage",
     tech: ["Next.js", "Tailwind CSS", "Swiper js"],
+    ariaLabelProjects: "Enlace a proyecto Dental Website",
+    ariaLabelGithub: "Enlace a github Dental Website"
+
   },
   // {
   //   id: 3,
@@ -66,6 +71,7 @@ const projects = [
     link: "https://nataliaggg.com/",
     github: "",
     tech: ["Figma", "Adobe XD"],
+    ariaLabel: "Enlace a proyecto FlowMobile App Design"
   },
   {
     id: 6,
@@ -76,6 +82,7 @@ const projects = [
     link: "https://nataliaggg.com/",
     github: "",
     tech: ["Figma", "Framer", "Photoshop"],
+    ariaLabel: "Enlace a proyecto ShopEase Dashboard Redesign"
   },
   {
     id: 7,
@@ -86,6 +93,7 @@ const projects = [
     link: "https://tecnoprobadeba.com/",
     github: "",
     tech: ["Figma", "Ilustrator", "Photoshop"],
+    ariaLabel: "Enlace a proyecto Brewhaus Brand Identity"
   },
   {
     id: 8,
@@ -96,6 +104,7 @@ const projects = [
     link: "https://nataliaggg.com/",
     github: "",
     tech: ["Figma", "Canva", "Photoshop"],
+    ariaLabel: "Enlace a proyecto LunaSkin Luxury Branding"
   },
   {
     id: 9,
@@ -107,6 +116,7 @@ const projects = [
     link: "https://nataliaggg.com/",
     github: "",
     tech: ["Ilustrator", "Figma", "Notion"],
+    ariaLabel: "Enlace a proyecto NovaTech Brand Kit"
   },
   {
     id: 10,
@@ -117,6 +127,8 @@ const projects = [
     link: "https://ai-agency-pixelart.netlify.app/",
     github: "https://github.com/Isradev96/AI-Agency-webpage",
     tech: ["React", "Tailwind CSS", "Framer Motion", "Swiper js"],
+    ariaLabelProjects: "Enlace a proyecto AI Agency Landing Page",
+    ariaLabelGithub: "Enlace a github AI Agency Landing Page"
   },
   {
     id: 11,
@@ -127,6 +139,8 @@ const projects = [
     link: "https://tecnoprobadeba.com/",
     github: "",
     tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    ariaLabelProjects: "Enlace a proyecto TecnoPro Landing Page",
+    ariaLabelGithub: "Enlace a github TecnoPro Landing Page"
   },
   {
     id: 12,
@@ -137,6 +151,8 @@ const projects = [
     link: "https://nataliaggg.com/",
     github: "https://github.com/Isradev96/Natalia-GGG",
     tech: ["HTML", "CSS", "JavaScript"],
+    ariaLabelProjects: "Enlace a proyecto Natalia GGG Landing Page",
+    ariaLabelGithub: "Enlace a github Natalia GGG Landing Page"
   },
   {
     id: 13,
@@ -147,6 +163,8 @@ const projects = [
     link: "https://pixelartweb.com/",
     github: "",
     tech: ["HTML", "CSS", "JavaScript", "WordPress"],
+    ariaLabelProjects: "Enlace a proyecto PixelArt Web & Design Website",
+    ariaLabelGithub: "Enlace a github PixelArt Web & Design Website"
   },
   {
     id: 14,
@@ -157,6 +175,8 @@ const projects = [
     link: "https://pokedex-react-isradev.netlify.app/",
     github: "https://github.com/Isradev96/Pokedex-React",
     tech: ["React", "Fetch API", "CSS"],
+    ariaLabelProjects: "Enlace a proyecto Pokedex With React",
+    ariaLabelGithub: "Enlace a github Pokedex With React"
   },
 ];
 
@@ -238,13 +258,13 @@ const Work = () => {
                                 {/* btns */}
                                 <div className="flex flex-col sm:flex-row gap-4 items-start mb-8">
                                   <Link href={project.link} target="blank">
-                                    <button aria-label="Live Projects" className="btn btn-sm btn-accent flex gap-2">
+                                    <button aria-label={project.ariaLabelProjects} className="btn btn-sm btn-accent flex gap-2">
                                       <MdArrowOutward aria-hidden="true" className="text-xl"/>
                                       <span>Live Projects</span>
                                     </button>
                                   </Link>
                                   <Link href={project.github} target="blank">
-                                    <button aria-label="Git Repo" className="btn btn-sm btn-white flex gap-2">
+                                    <button aria-label={project.ariaLabelGithub} className="btn btn-sm btn-white flex gap-2">
                                       <FaGithub aria-hidden="true" className="text-xl"/>
                                       <span>Github Repo</span>
                                     </button>
