@@ -11,7 +11,7 @@ const MainNav = () => {
         <Logo />
         <NavLinks containerStyles="flex flex-col gap-6" />
         {/* colocar enlace a mi CV */}
-        <Link href="./cv/CV_Israel_Cortes_English.pdf" target="blank">
+        <Link href="./cv/CV_Israel_Cortes.pdf" target="blank">
           <button aria-label="Download CV" className="btn btn-lg btn-tertiary mb-16">
           <div className="flex items-center gap-3">
             <span>Download CV</span>

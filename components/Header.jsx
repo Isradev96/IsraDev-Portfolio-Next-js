@@ -41,7 +41,7 @@ const Header = () => {
               </SheetHeader>
               <NavLinks containerStyles="flex flex-col gap-8 max-w-[100px]" />
               <div>
-                <Link href="./cv/CV_Israel_Cortes_English.pdf" target="blank">
+                <Link href="./cv/CV_Israel_Cortes.pdf" target="blank">
                   <button aria-label="Download CV" className="btn btn-lg btn-tertiary mb-16">
                     <div className="flex items-center gap-3">
                       <span>Download CV</span>
